@@ -12,43 +12,43 @@ class CanBo:
         return ""
 
     def hien_thi(self):
-        print(f"[{self.loai_cb()}] | {self._ten} | {self._tuoi} | {self._gioitinh} | {self._diachi} {self.thong_tin_rieng()}")
+        print(f"{self.loai_cb()} | {self._ten} | {self._tuoi} | {self._gioitinh} | {self._diachi} | {self.thong_tin_rieng()}")
 
 
 class CongNhan(CanBo):
     def __init__(self, ten, tuoi, gioitinh, diachi, bac):
         super().__init__(ten, tuoi, gioitinh, diachi)
-        self.__bac = bac
+        self._bac = bac
 
     def loai_cb(self):
         return "Cong nhan"
 
     def thong_tin_rieng(self):
-        return f"| bac: {self.__bac}"
+        return f" bac: {self._bac}"
 
 
 class KySu(CanBo):
     def __init__(self, ten, tuoi, gioitinh, diachi, nganh):
         super().__init__(ten, tuoi, gioitinh, diachi)
-        self.__nganh = nganh
+        self._nganh = nganh
 
     def loai_cb(self):
         return "Ky su"
 
     def thong_tin_rieng(self):
-        return f"| nganh: {self.__nganh}"
+        return f" nganh: {self._nganh}"
 
 
 class NhanVien(CanBo):
     def __init__(self, ten, tuoi, gioitinh, diachi, congviec):
         super().__init__(ten, tuoi, gioitinh, diachi)
-        self.__congviec = congviec
+        self._congviec = congviec
 
     def loai_cb(self):
         return "Nhan vien"
 
     def thong_tin_rieng(self):
-        return f"| cong viec: {self.__congviec}"
+        return f" cong viec: {self._congviec}"
 
 
 class QLCB:
