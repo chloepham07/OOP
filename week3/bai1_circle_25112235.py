@@ -1,5 +1,5 @@
 import math
-from point import Point
+from bai4_point_25112235 import Point
 
 class Circle:
     def __init__(self, center: Point, radius: float):

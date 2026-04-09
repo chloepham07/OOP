@@ -3,7 +3,11 @@ class NhanVien():
         self.__tenNhanVien = tenNhanVien
         self.__luongCoBan = luongCoBan
         self.__heSoLuong = heSoLuong
+        if luongCoBan < 0: 
+            raise ValueError("Lương không âm")
+        self.__luongCoBan = min(luongCoBan, Luong_Max)
         self.Luong_Max = Luong_Max
+        
     def get_tenNhanVien(self):
         return self.__tenNhanVien
     

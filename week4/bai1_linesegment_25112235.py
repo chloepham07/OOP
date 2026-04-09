@@ -1,4 +1,4 @@
-from week3.point import Point
+from week3.bai4_point_25112235 import Point
 import copy
 
 class LineSegment:
