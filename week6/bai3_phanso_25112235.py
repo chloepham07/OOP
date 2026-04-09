@@ -112,6 +112,14 @@ print("\n 2.Sap xep tang dan")
 for ps in sorted(ds):
     print(f"  {ps}")
 
-print("\n 3.Set loai trung")
+print("\n 3.Phep tinh co ban (phan so dau + cuoi)")
+if len(ds) >= 2:
+    a, b = ds[0], ds[-1]
+    print(f"  {a} + {b} = {a + b}")
+    print(f"  {a} - {b} = {a - b}")
+    print(f"  {a} * {b} = {a * b}")
+    print(f"  {a} / {b} = {a / b}")
+
+print("\n 4.Set loai trung")
 print(f"  Truoc: {[repr(p) for p in ds]}")
 print(f"  Sau  : {[str(p) for p in set(ds)]}")
