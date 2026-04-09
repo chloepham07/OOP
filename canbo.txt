@@ -1,3 +1,0 @@
-[Cong nhan | Bac: 10] dat | 19 tuoi | nam | danang
-[Ky su | Nganh: cs] duyen | 18 tuoi | nu | nd
-[Nhan vien | Cong viec: van phong] muoi | 19 tuoi | nam | hue
