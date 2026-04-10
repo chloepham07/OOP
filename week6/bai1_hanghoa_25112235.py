@@ -79,7 +79,7 @@ def luu_file(ds, ten_file="hanghoa.txt"):
 # Context Manager: doc danh sach tu file 
 def doc_file(ten_file="hanghoa.txt"):
     """Doc va in noi dung file hang hoa."""
-    print(f"\n--- Noi dung file '{ten_file}' ---")
+    print(f"\n--- Noi dung file '{ten_file}' ---") 
     with open(ten_file, "r", encoding="utf-8") as f:
         for dong in f:
             print(dong)

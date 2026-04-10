@@ -106,13 +106,13 @@ for i in range(n):
 
 print("\n 1.Toi gian")
 for ps in ds:
-    print(f"  {repr(ps)} toi gian la {ps}")
+    print(f"  {str(ps)} toi gian la {ps}")       #
 
 print("\n 2.Sap xep tang dan")
 for ps in sorted(ds):
     print(f"  {ps}")
 
-print("\n 3.Phep tinh co ban (phan so dau + cuoi)")
+print("\n Phep tinh co ban (phan so dau + cuoi)")
 if len(ds) >= 2:
     a, b = ds[0], ds[-1]
     print(f"  {a} + {b} = {a + b}")
@@ -121,5 +121,5 @@ if len(ds) >= 2:
     print(f"  {a} / {b} = {a / b}")
 
 print("\n 4.Set loai trung")
-print(f"  Truoc: {[repr(p) for p in ds]}")
+print(f"  Truoc: {[str(p) for p in ds]}")   #
 print(f"  Sau  : {[str(p) for p in set(ds)]}")
